@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Image
+ * # Semantic UI 2.1.8 - Image
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -168,11 +168,11 @@ img.ui.bordered.image {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
-.ui[class*="left spaced"].image {
+.ui.left-spaced.image {
   margin-left: 0.5em;
   margin-right: 0em;
 }
-.ui[class*="right spaced"].image {
+.ui.right-spaced.image {
   margin-left: 0em;
   margin-right: 0.5em;
 }

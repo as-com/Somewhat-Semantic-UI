@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Container
+ * # Semantic UI 2.1.8 - Container
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -119,19 +119,18 @@
            Variations
 *******************************/
 
-.ui[class*="left aligned"].container {
+.ui.left-aligned.container {
   text-align: left;
 }
-.ui[class*="center aligned"].container {
+.ui.center-aligned.container {
   text-align: center;
 }
-.ui[class*="right aligned"].container {
+.ui.right-aligned.container {
   text-align: right;
 }
 .ui.justified.container {
   text-align: justify;
   -webkit-hyphens: auto;
-     -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
 }

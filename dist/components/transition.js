@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Transition
+ * # Semantic UI 2.1.8 - Transition
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -543,7 +543,7 @@ $.fn.transition = function() {
           },
           animationClass: function(animation) {
             var
-              animationClass = animation || settings.animation,
+              animationClass = animation.replace(' ', '-') || settings.animation,
               directionClass = (module.can.transition() && !module.has.direction())
                 ? module.get.direction() + ' '
                 : ''
