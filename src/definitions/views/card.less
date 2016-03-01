@@ -193,12 +193,12 @@
  Floated Content
 -----------------*/
 
-.ui.cards > .card  [class*="left floated"],
-.ui.card [class*="left floated"] {
+.ui.cards > .card  .left-floated,
+.ui.card .left-floated {
   float: left;
 }
-.ui.cards > .card [class*="right floated"],
-.ui.card [class*="right floated"] {
+.ui.cards > .card .right-floated,
+.ui.card .right-floated {
   float: right;
 }
 
@@ -206,16 +206,16 @@
      Aligned
 ---------------*/
 
-.ui.cards > .card  [class*="left aligned"],
-.ui.card [class*="left aligned"] {
+.ui.cards > .card  .left-aligned,
+.ui.card .left-aligned {
   text-align: left;
 }
-.ui.cards > .card [class*="center aligned"],
-.ui.card [class*="center aligned"] {
+.ui.cards > .card .center-aligned,
+.ui.card .center-aligned {
   text-align: center;
 }
-.ui.cards > .card [class*="right aligned"],
-.ui.card [class*="right aligned"] {
+.ui.cards > .card .right-aligned,
+.ui.card .right-aligned {
   text-align: right;
 }
 
@@ -281,8 +281,8 @@
   margin-right: 0em;
 }
 
-.ui.cards > .card .meta [class*="right floated"],
-.ui.card .meta [class*="right floated"] {
+.ui.cards > .card .meta .right-floated,
+.ui.card .meta .right-floated {
   margin-right: 0em;
   margin-left: @metaSpacing;
 }

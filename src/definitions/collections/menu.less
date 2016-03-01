@@ -1700,18 +1700,18 @@ Floated Menu / Item
 }
 
 .ui.fixed.menu,
-.ui[class*="top fixed"].menu {
+.ui.top-fixed.menu {
   top: 0px;
   left: 0px;
   right: auto;
   bottom: auto;
 }
-.ui[class*="top fixed"].menu {
+.ui.top-fixed.menu {
   border-top: none;
   border-left: none;
   border-right: none;
 }
-.ui[class*="right fixed"].menu {
+.ui.right-fixed.menu {
   border-top: none;
   border-bottom: none;
   border-right: none;
@@ -1722,7 +1722,7 @@ Floated Menu / Item
   width: auto;
   height: 100%;
 }
-.ui[class*="bottom fixed"].menu {
+.ui.bottom-fixed.menu {
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -1731,7 +1731,7 @@ Floated Menu / Item
   top: auto;
   right: auto;
 }
-.ui[class*="left fixed"].menu {
+.ui.left-fixed.menu {
   border-top: none;
   border-bottom: none;
   border-left: none;
@@ -1844,19 +1844,19 @@ Floated Menu / Item
 }
 
 /* Top */
-.ui[class*="top attached"].menu {
+.ui.top-attached.menu {
   bottom: 0px;
   margin-bottom: 0em;
   top: @attachedTopOffset;
   margin-top: @verticalMargin;
   border-radius: @borderRadius @borderRadius 0em 0em;
 }
-.ui.menu[class*="top attached"]:first-child {
+.ui.menu.top-attached:first-child {
   margin-top: 0em;
 }
 
 /* Bottom */
-.ui[class*="bottom attached"].menu {
+.ui.bottom-attached.menu {
   bottom: 0px;
   margin-top: 0em;
   top: @attachedBottomOffset;
@@ -1864,7 +1864,7 @@ Floated Menu / Item
   box-shadow: @attachedBottomBoxShadow;
   border-radius: 0em 0em @borderRadius @borderRadius;
 }
-.ui[class*="bottom attached"].menu:last-child {
+.ui.bottom-attached.menu:last-child {
   margin-bottom: 0em;
 }
 

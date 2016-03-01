@@ -268,8 +268,8 @@ html.ios body {
 .ui.thin.right.sidebar {
   width: @thinWidth;
 }
-.ui[class*="very thin"].left.sidebar,
-.ui[class*="very thin"].right.sidebar {
+.ui.very-thin.left.sidebar,
+.ui.very-thin.right.sidebar {
   width: @veryThinWidth;
 }
 .ui.left.sidebar,
@@ -280,8 +280,8 @@ html.ios body {
 .ui.wide.right.sidebar {
   width: @wideWidth;
 }
-.ui[class*="very wide"].left.sidebar,
-.ui[class*="very wide"].right.sidebar {
+.ui.very-wide.left.sidebar,
+.ui.very-wide.right.sidebar {
   width: @veryWideWidth;
 }
 
@@ -290,16 +290,16 @@ html.ios body {
 .ui.visible.thin.left.sidebar ~ .pusher {
   transform: translate3d(@thinWidth, 0, 0);
 }
-.ui.visible[class*="very thin"].left.sidebar ~ .fixed,
-.ui.visible[class*="very thin"].left.sidebar ~ .pusher {
+.ui.visible.very-thin.left.sidebar ~ .fixed,
+.ui.visible.very-thin.left.sidebar ~ .pusher {
   transform: translate3d(@veryThinWidth, 0, 0);
 }
 .ui.visible.wide.left.sidebar ~ .fixed,
 .ui.visible.wide.left.sidebar ~ .pusher {
   transform: translate3d(@wideWidth, 0, 0);
 }
-.ui.visible[class*="very wide"].left.sidebar ~ .fixed,
-.ui.visible[class*="very wide"].left.sidebar ~ .pusher {
+.ui.visible.very-wide.left.sidebar ~ .fixed,
+.ui.visible.very-wide.left.sidebar ~ .pusher {
   transform: translate3d(@veryWideWidth, 0, 0);
 }
 
@@ -308,16 +308,16 @@ html.ios body {
 .ui.visible.thin.right.sidebar ~ .pusher {
   transform: translate3d(-@thinWidth, 0, 0);
 }
-.ui.visible[class*="very thin"].right.sidebar ~ .fixed,
-.ui.visible[class*="very thin"].right.sidebar ~ .pusher {
+.ui.visible.very-thin.right.sidebar ~ .fixed,
+.ui.visible.very-thin.right.sidebar ~ .pusher {
   transform: translate3d(-@veryThinWidth, 0, 0);
 }
 .ui.visible.wide.right.sidebar ~ .fixed,
 .ui.visible.wide.right.sidebar ~ .pusher {
   transform: translate3d(-@wideWidth, 0, 0);
 }
-.ui.visible[class*="very wide"].right.sidebar ~ .fixed,
-.ui.visible[class*="very wide"].right.sidebar ~ .pusher {
+.ui.visible.very-wide.right.sidebar ~ .fixed,
+.ui.visible.very-wide.right.sidebar ~ .pusher {
   transform: translate3d(-@veryWideWidth, 0, 0);
 }
 

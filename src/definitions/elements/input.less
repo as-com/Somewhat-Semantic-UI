@@ -226,7 +226,7 @@
   padding-left: 0em !important;
   padding-right: @transparentIconMargin !important;
 }
-.ui.transparent[class*="left icon"].input > input {
+.ui.transparent.left-icon.input > input {
   padding-left: @transparentIconMargin !important;
   padding-right: 0em !important;
 }
@@ -294,16 +294,16 @@
 }
 
 /* Left Icon Input */
-.ui[class*="left icon"].input > i.icon {
+.ui.left-icon.input > i.icon {
   right: auto;
   left: @borderWidth;
   border-radius: @borderRadius 0em 0em @borderRadius;
 }
-.ui[class*="left icon"].input > i.circular.icon {
+.ui.left-icon.input > i.circular.icon {
   right: auto;
   left: @circularIconHorizontalOffset;
 }
-.ui[class*="left icon"].input > input {
+.ui.left-icon.input > input {
   padding-left: @iconMargin !important;
   padding-right: @horizontalPadding !important;
 }
@@ -329,31 +329,31 @@
 }
 
 /* Regular Label on Left */
-.ui.labeled.input:not([class*="corner labeled"]) .label:first-child {
+.ui.labeled.input:not(.corner-labeled) .label:first-child {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.ui.labeled.input:not([class*="corner labeled"]) .label:first-child + input {
+.ui.labeled.input:not(.corner-labeled) .label:first-child + input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-left-color: transparent;
 }
-.ui.labeled.input:not([class*="corner labeled"]) .label:first-child + input:focus {
+.ui.labeled.input:not(.corner-labeled) .label:first-child + input:focus {
   border-left-color: @focusBorderColor;
 }
 
 /* Regular Label on Right */
-.ui[class*="right labeled"].input input {
+.ui.right-labeled.input input {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   border-right-color: transparent !important;
 }
-.ui[class*="right labeled"].input input + .label {
+.ui.right-labeled.input input + .label {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.ui[class*="right labeled"].input input:focus {
+.ui.right-labeled.input input:focus {
   border-right-color: @focusBorderColor !important;
 }
 
@@ -366,24 +366,24 @@
 }
 
 /* Spacing with corner label */
-.ui[class*="corner labeled"]:not([class*="left corner labeled"]).labeled.input input {
+.ui.corner-labeled:not(.left-corner-labeled).labeled.input input {
   padding-right: @labeledMargin !important;
 }
-.ui[class*="corner labeled"].icon.input:not([class*="left corner labeled"]) > input {
+.ui.corner-labeled.icon.input:not(.left-corner-labeled) > input {
   padding-right: @labeledIconInputMargin !important;
 }
-.ui[class*="corner labeled"].icon.input:not([class*="left corner labeled"]) > .icon {
+.ui.corner-labeled.icon.input:not(.left-corner-labeled) > .icon {
   margin-right: @labeledIconMargin;
 }
 
 /* Left Labeled */
-.ui[class*="left corner labeled"].labeled.input input {
+.ui.left-corner-labeled.labeled.input input {
   padding-left: @labeledMargin !important;
 }
-.ui[class*="left corner labeled"].icon.input > input {
+.ui.left-corner-labeled.icon.input > input {
   padding-left: @labeledIconInputMargin !important;
 }
-.ui[class*="left corner labeled"].icon.input > .icon {
+.ui.left-corner-labeled.icon.input > .icon {
   margin-left: @labeledIconMargin;
 }
 
@@ -416,45 +416,45 @@
 }
 
 /* Button on Right */
-.ui.action.input:not([class*="left action"]) > input {
+.ui.action.input:not(.left-action) > input {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   border-right-color: transparent !important;
 }
-.ui.action.input:not([class*="left action"]) > .dropdown,
-.ui.action.input:not([class*="left action"]) > .button,
-.ui.action.input:not([class*="left action"]) > .buttons > .button {
+.ui.action.input:not(.left-action) > .dropdown,
+.ui.action.input:not(.left-action) > .button,
+.ui.action.input:not(.left-action) > .buttons > .button {
   border-radius: 0px;
 }
-.ui.action.input:not([class*="left action"]) > .dropdown:last-child,
-.ui.action.input:not([class*="left action"]) > .button:last-child,
-.ui.action.input:not([class*="left action"]) > .buttons:last-child > .button {
+.ui.action.input:not(.left-action) > .dropdown:last-child,
+.ui.action.input:not(.left-action) > .button:last-child,
+.ui.action.input:not(.left-action) > .buttons:last-child > .button {
   border-radius: 0px @borderRadius @borderRadius 0px;
 }
 
 /* Input Focus */
-.ui.action.input:not([class*="left action"]) input:focus {
+.ui.action.input:not(.left-action) input:focus {
   border-right-color: @focusBorderColor !important;
 }
 
 /* Button on Left */
-.ui[class*="left action"].input > input {
+.ui.left-action.input > input {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
   border-left-color: transparent !important;
 }
-.ui[class*="left action"].input > .dropdown,
-.ui[class*="left action"].input > .button,
-.ui[class*="left action"].input > .buttons > .button {
+.ui.left-action.input > .dropdown,
+.ui.left-action.input > .button,
+.ui.left-action.input > .buttons > .button {
   border-radius: 0px;
 }
-.ui[class*="left action"].input > .dropdown:first-child,
-.ui[class*="left action"].input > .button:first-child,
-.ui[class*="left action"].input > .buttons:first-child > .button {
+.ui.left-action.input > .dropdown:first-child,
+.ui.left-action.input > .button:first-child,
+.ui.left-action.input > .buttons:first-child > .button {
   border-radius: @borderRadius 0px 0px @borderRadius;
 }
 /* Input Focus */
-.ui[class*="left action"].input > input:focus {
+.ui.left-action.input > input:focus {
   border-left-color: @focusBorderColor !important;
 }
 

@@ -409,21 +409,21 @@
 }
 
 /* Right */
-.ui.labeled.button:not([class*="left labeled"]) > .button {
+.ui.labeled.button:not(.left-labeled) > .button {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.ui.labeled.button:not([class*="left labeled"]) > .label {
+.ui.labeled.button:not(.left-labeled) > .label {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 /* Left Side */
-.ui[class*="left labeled"].button > .button {
+.ui.left-labeled.button > .button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.ui[class*="left labeled"].button > .label {
+.ui.left-labeled.button > .label {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -604,14 +604,14 @@
        Floated
 --------------------*/
 
-.ui[class*="left floated"].buttons,
-.ui[class*="left floated"].button {
+.ui.left-floated.buttons,
+.ui.left-floated.button {
   float: left;
   margin-left: 0em;
   margin-right: @floatedMargin;
 }
-.ui[class*="right floated"].buttons,
-.ui[class*="right floated"].button {
+.ui.right-floated.buttons,
+.ui.right-floated.button {
   float: right;
   margin-right: 0em;
   margin-left: @floatedMargin;
@@ -851,11 +851,11 @@
 }
 
 /* Right Labeled */
-.ui[class*="right labeled"].icon.button {
+.ui.right-labeled.icon.button {
   padding-right: @labeledIconPadding !important;
   padding-left: @horizontalPadding !important;
 }
-.ui[class*="right labeled"].icon.button > .icon {
+.ui.right-labeled.icon.button > .icon {
   left: auto;
   right: 0em;
   border-radius: 0px;
@@ -898,8 +898,8 @@
 }
 
 /* Fluid Labeled */
-.ui.fluid[class*="left labeled"].icon.button,
-.ui.fluid[class*="right labeled"].icon.button {
+.ui.fluid.left-labeled.icon.button,
+.ui.fluid.right-labeled.icon.button {
   padding-left: @horizontalPadding !important;
   padding-right: @horizontalPadding !important;
 }
@@ -1046,55 +1046,55 @@
 }
 
 /* Top / Bottom */
-.ui[class*="top attached"].buttons {
+.ui.top-attached.buttons {
   margin-bottom: @attachedOffset;
   border-radius: @borderRadius @borderRadius 0em 0em;
 }
-.ui[class*="top attached"].buttons .button:first-child {
+.ui.top-attached.buttons .button:first-child {
   border-radius: @borderRadius 0em 0em 0em;
 }
-.ui[class*="top attached"].buttons .button:last-child {
+.ui.top-attached.buttons .button:last-child {
   border-radius: 0em @borderRadius 0em 0em;
 }
 
-.ui[class*="bottom attached"].buttons {
+.ui.bottom-attached.buttons {
   margin-top: @attachedOffset;
   border-radius: 0em 0em @borderRadius @borderRadius;
 }
-.ui[class*="bottom attached"].buttons .button:first-child {
+.ui.bottom-attached.buttons .button:first-child {
   border-radius: 0em 0em 0em @borderRadius;
 }
-.ui[class*="bottom attached"].buttons .button:last-child {
+.ui.bottom-attached.buttons .button:last-child {
   border-radius: 0em 0em @borderRadius 0em;
 }
 
 /* Left / Right */
-.ui[class*="left attached"].buttons {
+.ui.left-attached.buttons {
   display: inline-flex;
   margin-right: 0em;
   margin-left: @attachedOffset;
   border-radius: 0em @borderRadius @borderRadius 0em;
 }
-.ui[class*="left attached"].buttons .button:first-child {
+.ui.left-attached.buttons .button:first-child {
   margin-left: @attachedOffset;
   border-radius: 0em @borderRadius 0em 0em;
 }
-.ui[class*="left attached"].buttons .button:last-child {
+.ui.left-attached.buttons .button:last-child {
   margin-left: @attachedOffset;
   border-radius: 0em 0em @borderRadius 0em;
 }
 
-.ui[class*="right attached"].buttons {
+.ui.right-attached.buttons {
   display: inline-flex;
   margin-left: 0em;
   margin-right: @attachedOffset;
   border-radius: @borderRadius 0em 0em @borderRadius;
 }
-.ui[class*="right attached"].buttons .button:first-child {
+.ui.right-attached.buttons .button:first-child {
   margin-left: @attachedOffset;
   border-radius: @borderRadius 0em 0em 0em;
 }
-.ui[class*="right attached"].buttons .button:last-child {
+.ui.right-attached.buttons .button:last-child {
   margin-left: @attachedOffset;
   border-radius: 0em 0em 0em @borderRadius;
 }

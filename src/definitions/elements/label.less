@@ -348,19 +348,19 @@ a.ui.label {
   padding-left: @ribbonDistance;
   padding-right: @ribbonTriangleSize;
 }
-.ui[class*="right ribbon"].label {
+.ui.right-ribbon.label {
   left: @rightRibbonOffset;
   padding-left: @ribbonTriangleSize;
   padding-right: @ribbonDistance;
 }
 
 /* Right Ribbon */
-.ui[class*="right ribbon"].label {
+.ui.right-ribbon.label {
   text-align: left;
   transform: translateX(-100%);
   border-radius: @borderRadius 0em 0em @borderRadius;
 }
-.ui[class*="right ribbon"].label:after {
+.ui.right-ribbon.label:after {
   left: auto;
   right: 0%;
 
@@ -380,8 +380,8 @@ a.ui.label {
 .ui.image > .ui.ribbon.label {
   left: @ribbonImageOffset;
 }
-.ui.card .image > .ui[class*="right ribbon"].label,
-.ui.image > .ui[class*="right ribbon"].label {
+.ui.card .image > .ui.right-ribbon.label,
+.ui.image > .ui.right-ribbon.label {
   left: @rightRibbonImageOffset;
   padding-left: @horizontalPadding;
 }
@@ -390,7 +390,7 @@ a.ui.label {
 .ui.table td > .ui.ribbon.label {
   left: @ribbonTableOffset;
 }
-.ui.table td > .ui[class*="right ribbon"].label {
+.ui.table td > .ui.right-ribbon.label {
   left: @rightRibbonTableOffset;
   padding-left: @horizontalPadding;
 }
@@ -400,7 +400,7 @@ a.ui.label {
       Attached
 --------------------*/
 
-.ui[class*="top attached"].label,
+.ui.top-attached.label,
 .ui.attached.label {
   width: 100%;
   position: absolute;
@@ -412,31 +412,31 @@ a.ui.label {
 
   border-radius: @attachedCornerBorderRadius @attachedCornerBorderRadius 0em 0em;
 }
-.ui[class*="bottom attached"].label {
+.ui.bottom-attached.label {
   top: auto;
   bottom: 0em;
   border-radius: 0em 0em @attachedCornerBorderRadius @attachedCornerBorderRadius;
 }
 
-.ui[class*="top left attached"].label {
+.ui.top-left-attached.label {
   width: auto;
   margin-top: 0em !important;
   border-radius: @attachedCornerBorderRadius 0em @attachedBorderRadius 0em;
 }
 
-.ui[class*="top right attached"].label {
+.ui.top-right-attached.label {
   width: auto;
   left: auto;
   right: 0em;
   border-radius: 0em @attachedCornerBorderRadius 0em @attachedBorderRadius;
 }
-.ui[class*="bottom left attached"].label {
+.ui.bottom-left-attached.label {
   width: auto;
   top: auto;
   bottom: 0em;
   border-radius: 0em @attachedBorderRadius 0em @attachedCornerBorderRadius;
 }
-.ui[class*="bottom right attached"].label {
+.ui.bottom-right-attached.label {
   top: auto;
   bottom: 0em;
   left: auto;
@@ -1127,24 +1127,24 @@ a.ui.basic.label:hover {
 
 /*--- Above ---*/
 .ui.pointing.label,
-.ui[class*="pointing above"].label {
+.ui.pointing-above.label {
   margin-top: @pointingVerticalDistance;
 }
 .ui.pointing.label:before,
-.ui[class*="pointing above"].label:before {
+.ui.pointing-above.label:before {
   border-width: @borderWidth 0px 0px @borderWidth;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 0%;
   left: 50%;
 }
 /*--- Below ---*/
-.ui[class*="bottom pointing"].label,
-.ui[class*="pointing below"].label {
+.ui.bottom-pointing.label,
+.ui.pointing-below.label {
   margin-top: 0em;
   margin-bottom: @pointingVerticalDistance;
 }
-.ui[class*="bottom pointing"].label:before,
-.ui[class*="pointing below"].label:before {
+.ui.bottom-pointing.label:before,
+.ui.pointing-below.label:before {
   border-width: 0px @borderWidth @borderWidth 0px;
   top: auto;
   right: auto;
@@ -1153,11 +1153,11 @@ a.ui.basic.label:hover {
   left: 50%;
 }
 /*--- Left ---*/
-.ui[class*="left pointing"].label {
+.ui.left-pointing.label {
   margin-top: 0em;
   margin-left: @pointingHorizontalDistance;
 }
-.ui[class*="left pointing"].label:before {
+.ui.left-pointing.label:before {
   border-width: 0px 0px @borderWidth @borderWidth;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   bottom: auto;
@@ -1166,11 +1166,11 @@ a.ui.basic.label:hover {
   left: 0em;
 }
 /*--- Right ---*/
-.ui[class*="right pointing"].label {
+.ui.right-pointing.label {
   margin-top: 0em;
   margin-right: @pointingHorizontalDistance;
 }
-.ui[class*="right pointing"].label:before {
+.ui.right-pointing.label:before {
   border-width: @borderWidth @borderWidth 0px 0px;
   transform: translateX(50%) translateY(-50%) rotate(45deg);
   top: 50%;
@@ -1183,23 +1183,23 @@ a.ui.basic.label:hover {
 
 /*--- Above ---*/
 .ui.basic.pointing.label:before,
-.ui.basic[class*="pointing above"].label:before {
+.ui.basic.pointing-above.label:before {
   margin-top: @basicPointingTriangleOffset;
 }
 /*--- Below ---*/
-.ui.basic[class*="bottom pointing"].label:before,
-.ui.basic[class*="pointing below"].label:before {
+.ui.basic.bottom-pointing.label:before,
+.ui.basic.pointing-below.label:before {
   bottom: auto;
   top: 100%;
   margin-top: -@basicPointingTriangleOffset;
 }
 /*--- Left ---*/
-.ui.basic[class*="left pointing"].label:before {
+.ui.basic.left-pointing.label:before {
   top: 50%;
   left: @basicPointingTriangleOffset;
 }
 /*--- Right ---*/
-.ui.basic[class*="right pointing"].label:before {
+.ui.basic.right-pointing.label:before {
   top: 50%;
   right: @basicPointingTriangleOffset;
 }

@@ -543,7 +543,7 @@ $.fn.transition = function() {
           },
           animationClass: function(animation) {
             var
-              animationClass = animation || settings.animation,
+              animationClass = animation.replace(' ', '-') || settings.animation,
               directionClass = (module.can.transition() && !module.has.direction())
                 ? module.get.direction() + ' '
                 : ''

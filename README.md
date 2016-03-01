@@ -1,7 +1,11 @@
 ![Semantic](http://www.semantic-ui.com/images/logo.png)
 
-# Semantic UI
+# Somewhat Semantic UI
+This is a modified version of Semantic UI that replaces a lot of the strange CSS selectors (such as `[class*="seven column"]`) with simpler, but less "semantic" selectors (`.seven-column`) that play nicer with tools like [PurifyCSS](https://github.com/purifycss/purifycss).
 
+A substitutions files is provided for a list of all of the changed selectors.
+
+# Original README
 [![Join the chat at https://gitter.im/Semantic-Org/Semantic-UI](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Semantic-Org/Semantic-UI?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![ProjectTalk Messageboard](http://www.projecttalk.io/images/gh_badge-3e578a9f437f841de7446bab9a49d103.svg?vsn=d)]
